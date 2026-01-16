@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Psicólogo Online e Terapia de Casal | Tulio Henriques</title>
+    <meta name="description" content="Psicoterapia Online pela Fenomenologia Existencial. Ajuda especializada para ansiedade, depressão e crises conjugais. Agende sua sessão com sigilo absoluto.">
+    
+    <link rel="canonical" href="https://www.seu-dominio.com.br/">
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tulio Henriques | Psicólogo Clínico Online">
+    <meta property="og:description" content="Ressignifique sua história. Atendimento clínico ético com ênfase em Fenomenologia e Terapia de Casal.">
+    <meta property="og:url" content="https://www.seu-dominio.com.br/">
+    <meta property="og:site_name" content="Tulio Henriques Psicologia">
+    <meta property="og:image" content="https://www.seu-dominio.com.br/imgs/img-hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Psicólogo Online | Tulio Henriques">
+    <meta name="twitter:description" content="Terapia de casal e individual com base na Fenomenologia Existencial.">
+    <meta name="twitter:image" content="https://www.seu-dominio.com.br/imgs/img-hero.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Tulio Henriques Psicólogo",
+      "image": "https://www.seu-dominio.com.br/imgs/img-hero.jpg",
+      "@id": "https://www.seu-dominio.com.br",
+      "url": "https://www.seu-dominio.com.br",
+      "telephone": "+5500000000000",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR",
+        "addressRegion": "SP" 
+      },
+      "medicalSpecialty": [
+        "Psychology",
+        "Clinical Psychology"
+      ],
+      "description": "Psicólogo clínico especialista em Fenomenologia Existencial e Terapia de Casal."
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#F8FAF9',
+                            primary: '#4A7C75',
+                            dark: '#263C38',
+                            accent: '#D4A373',
+                            surface: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.05)',
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        html { scroll-padding-top: 80px; }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .whatsapp-animate { animation: pulse-green 2s infinite; }
+        .whatsapp-animate:hover { animation: none; }
+        
+        *:focus-visible {
+            outline: 2px solid #4A7C75;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-600 bg-brand-bg antialiased selection:bg-brand-primary selection:text-white">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-brand-dark flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-lg px-2">
+                <span>Tulio <span class="text-brand-primary">Henriques</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#sobre" class="text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-md px-2 py-1">Sobre</a>
+                <a href="#especialidades" class="text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-md px-2 py-1">Especialidades</a>
+                <a href="#livros" class="text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-md px-2 py-1">Livros</a>
+                <a href="#metodologia" class="text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-md px-2 py-1">Metodologia</a>
+                <a href="#faq" class="text-sm font-medium hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-md px-2 py-1">Dúvidas</a>
+                
+                <div class="flex items-center gap-4 border-l border-gray-200 pl-6 h-6">
+                    <a href="https://www.instagram.com/tuliohenriquespsicologo?igsh=YzZ5ODN6N2tpejNo" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-brand-dark hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded p-1">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-brand-dark hover:text-brand-primary transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded p-1">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                    </a>
+                </div>
+
+                <a href="#contato" class="px-6 py-2.5 bg-brand-dark text-white text-sm font-medium rounded-full hover:bg-brand-primary transition-all shadow-lg hover:shadow-brand-primary/30 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
+                    Agendar Sessão
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-primary rounded-md p-1" aria-label="Abrir Menu" aria-expanded="false">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl md:hidden flex flex-col p-6 space-y-4 opacity-0 -translate-y-4 pointer-events-none transition-all duration-300 ease-in-out">
+            <a href="#sobre" class="block text-gray-700 hover:text-brand-primary text-lg font-medium p-2 rounded focus:bg-gray-50 focus:text-brand-primary">Sobre Mim</a>
+            <a href="#especialidades" class="block text-gray-700 hover:text-brand-primary text-lg font-medium p-2 rounded focus:bg-gray-50 focus:text-brand-primary">Especialidades</a>
+            <a href="#livros" class="block text-gray-700 hover:text-brand-primary text-lg font-medium p-2 rounded focus:bg-gray-50 focus:text-brand-primary">Livros Publicados</a>
+            <a href="#metodologia" class="block text-gray-700 hover:text-brand-primary text-lg font-medium p-2 rounded focus:bg-gray-50 focus:text-brand-primary">Como Funciona</a>
+            
+            <div class="flex items-center gap-6 p-2">
+                <a href="https://www.instagram.com/tuliohenriquespsicologo?igsh=YzZ5ODN6N2tpejNo" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-brand-dark hover:text-brand-primary transition-colors">
+                     <svg class="w-6 h-6 fill-current" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-brand-dark hover:text-brand-primary transition-colors">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                </a>
+            </div>
+
+            <a href="#contato" class="block w-full text-center px-6 py-3 bg-brand-dark text-white rounded-lg focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">Agendar Agora</a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="contato">
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-accent/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-primary"></span> CRP: 02/21960
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-brand-dark leading-[1.15] mb-6">
+                    Ressignifique sua história, reencontre seu <span class="relative whitespace-nowrap text-brand-primary">
+                        equilíbrio
+                        <svg class="absolute w-full h-2 bottom-1 left-0 text-brand-accent/30 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" /></svg>
+                    </span>.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                    Psicoterapia Online focada na Fenomenologia Existencial. Um espaço seguro e sem julgamentos para tratar ansiedade, depressão e crises conjugais.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5581997427400" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-brand-primary text-white rounded-full font-semibold text-center hover:bg-brand-dark transition-all shadow-lg shadow-brand-primary/25 flex items-center justify-center gap-2 group focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
+                        <svg class="w-5 h-5 fill-current group-hover:scale-110 transition-transform" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                        Agendar Consulta
+                    </a>
+                    <a href="mailto:contato@psicologo.com" class="px-8 py-4 bg-white border border-gray-200 text-brand-dark rounded-full font-medium text-center hover:bg-gray-50 hover:border-brand-primary/30 transition-all flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-brand-primary focus:ring-offset-2">
+                        <svg class="w-5 h-5 mr-2 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Enviar E-mail
+                    </a>
+                </div>
+                
+                <div class="mt-10 flex items-center gap-4 text-sm text-gray-500 border-t border-gray-200/60 pt-6">
+                    <div class="flex items-center gap-1 text-brand-accent">
+                         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                    <span>Atendimento ético e acolhedor.</span>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center md:justify-end reveal-up delay-200">
+                <div class="relative w-72 md:w-80 lg:w-96 aspect-[3/4]">
+                    <div class="absolute inset-0 bg-brand-dark rounded-[2rem] rotate-3 opacity-10"></div>
+                    <div class="absolute inset-0 border-2 border-brand-primary/20 rounded-[2rem] -rotate-3"></div>
+                    
+                    <img src="imgs/img-hero.jpg" 
+                         width="800" height="1067"
+                         fetchpriority="high"
+                         alt="Psicólogo Clínico em atendimento online" 
+                         class="relative w-full h-full object-cover rounded-[2rem] shadow-2xl z-10 filter hover:grayscale-0 transition-all duration-700">
+                    
+                    <div class="absolute -bottom-6 -left-6 z-20 bg-white p-4 rounded-xl shadow-glass border border-white/50 flex items-center gap-3 animate-float">
+                        <div class="bg-green-100 p-2 rounded-full text-green-600 w-10 h-10 flex items-center justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-bold">Modalidade</p>
+                            <p class="text-sm font-bold text-brand-dark">Online & Seguro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2 relative reveal-up">
+                    <div class="absolute -top-4 -left-4 text-8xl text-brand-primary/10 font-serif">"</div>
+                    <p class="text-2xl md:text-3xl font-serif text-brand-dark italic leading-relaxed relative z-10">
+                        Não busco rotular suas dores, mas compreender como você vivencia o mundo, ajudando a encontrar novos sentidos para sua existência.
+                    </p>
+                    <div class="mt-6 flex items-center gap-4">
+                        <div class="h-px w-12 bg-brand-primary"></div>
+                        <span class="text-brand-primary font-bold tracking-widest uppercase text-sm">A Filosofia</span>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 space-y-6 text-lg reveal-up delay-100">
+                    <h2 class="text-3xl font-serif font-bold text-brand-dark">Sobre o Profissional</h2>
+                    <p>
+                        Olá. Minha atuação clínica é fundamentada na <strong class="text-brand-primary">Fenomenologia Existencial</strong>. Isso significa que meu foco não está nos sintomas isolados, mas na pessoa inteira e em como ela se relaciona com sua própria vida.
+                    </p>
+                    <p>
+                        Com experiência em casos de alta complexidade emocional e crises conjugais, ofereço um espaço onde o sigilo é absoluto e a escuta é ativa.
+                    </p>
+                    <ul class="grid sm:grid-cols-2 gap-4 mt-4 text-base">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-accent fill-current" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> CRP Ativo e Regular</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-accent fill-current" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> Pós-graduado em Clínica</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-accent fill-current" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> Atendimento Nacional</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-accent fill-current" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg> Sigilo Garantido</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="especialidades" class="py-24 bg-brand-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <span class="text-brand-primary font-bold tracking-widest uppercase text-xs">Áreas de Atuação</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mt-3 mb-6">Como posso ajudar você?</h2>
+                <p class="text-gray-600">Trabalho com duas frentes principais, adaptando a técnica à sua necessidade específica.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-soft hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-brand-primary/10 reveal-up">
+                    <div class="w-16 h-16 bg-brand-bg rounded-2xl flex items-center justify-center mb-8 text-brand-primary text-3xl group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-4">Psicoterapia Individual</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Um processo de autodescoberta para lidar com angústia, depressão e ansiedade. Investigamos juntos os padrões que se repetem na sua vida e buscamos caminhos mais autênticos.
+                    </p>
+                    <a href="#contato" class="inline-flex items-center text-brand-primary font-semibold hover:text-brand-dark transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded">
+                        Saber mais <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="bg-white p-10 rounded-3xl shadow-soft hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-brand-accent/20 reveal-up delay-100">
+                    <div class="w-16 h-16 bg-brand-bg rounded-2xl flex items-center justify-center mb-8 text-brand-accent text-3xl group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 640 512"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 35.6 68.9 86.1 77.1 143.8 24.1-6.1 41.9-28 41.9-54.2 0-59.6-48.4-108.2-109.9-108.2zM128 256H64C3.6 256-45.3 304.9-45.3 365.4c0 26.2 17.8 48.1 41.9 54.2 8.2-57.7 36.8-108.2 77.1-143.8C62.5 264.1 46.6 256 29 256h-1zm192 0c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm128 32h-36.8c-23.7 13.5-50.5 21.3-79.2 21.3s-55.5-7.8-79.2-21.3H128c-52.9 0-96 43.1-96 96 0 52.9 43.1 96 96 96h256c52.9 0 96-43.1 96-96 0-52.9-43.1-96-96-96z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-brand-dark mb-4">Terapia de Casal</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Focada na dinâmica do relacionamento. Ideal para casais que enfrentam falhas na comunicação, traições ou distanciamento, buscando reconstruir o vínculo ou encerrar ciclos com respeito.
+                    </p>
+                    <a href="#contato" class="inline-flex items-center text-brand-accent font-semibold hover:text-brand-dark transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded">
+                        Saber mais <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="livros" class="py-24 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6">
+             <div class="text-center max-w-3xl mx-auto mb-16 reveal-up">
+                <span class="text-brand-primary font-bold tracking-widest uppercase text-xs">Publicações</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mt-3 mb-6">Livros e Obras</h2>
+                <p class="text-gray-600">Conheça as obras publicadas onde aprofundo temas sobre a existência humana e os relacionamentos.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                <div class="bg-brand-bg rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 group reveal-up border border-transparent hover:border-brand-primary/10 flex flex-col h-full">
+                    <div class="relative aspect-[2/3] mb-6 overflow-hidden rounded-lg shadow-md bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800&fm=webp" 
+                             alt="Capa do Livro A Angústia Criativa" 
+                             loading="lazy" decoding="async" width="800" height="1200"
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-dark mb-2">A Angústia Criativa</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-2 flex-grow">Um olhar fenomenológico sobre como as crises existenciais podem ser o motor para grandes mudanças.</p>
+                    <a href="#" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-dark transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded p-1 w-fit" aria-label="Saiba mais sobre A Angústia Criativa">
+                        Ver detalhes <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <div class="bg-brand-bg rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 group reveal-up delay-100 border border-transparent hover:border-brand-primary/10 flex flex-col h-full">
+                    <div class="relative aspect-[2/3] mb-6 overflow-hidden rounded-lg shadow-md bg-gray-200">
+                         <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800&fm=webp" 
+                              alt="Capa do Livro Diálogos do Amor" 
+                              loading="lazy" decoding="async" width="800" height="1200"
+                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-dark mb-2">Diálogos do Amor</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-2 flex-grow">Reconstruindo vínculos na contemporaneidade e entendendo as linguagens afetivas do casal.</p>
+                    <a href="#" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-dark transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded p-1 w-fit" aria-label="Saiba mais sobre Diálogos do Amor">
+                        Ver detalhes <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                 <div class="bg-brand-bg rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 group reveal-up delay-200 border border-transparent hover:border-brand-primary/10 flex flex-col h-full">
+                    <div class="relative aspect-[2/3] mb-6 overflow-hidden rounded-lg shadow-md bg-gray-200">
+                         <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800&fm=webp" 
+                              alt="Capa do Livro Ser e Tempo" 
+                              loading="lazy" decoding="async" width="800" height="1200"
+                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-dark mb-2">Ser e Tempo (Comentado)</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-2 flex-grow">Uma introdução acessível e prática à obra complexa de Martin Heidegger para estudantes.</p>
+                    <a href="#" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-dark transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary rounded p-1 w-fit" aria-label="Saiba mais sobre Ser e Tempo">
+                        Ver detalhes <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <svg class="absolute top-0 left-0 text-white/5 w-64 h-64 transform -translate-x-1/2 -translate-y-1/2" viewBox="0 0 200 200" fill="currentColor"><circle cx="100" cy="100" r="100"/></svg>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2 reveal-up">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">A terapia online funciona?</h2>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        Sim. A modalidade é regulamentada pelo Conselho Federal de Psicologia e oferece a mesma eficácia do presencial, com a vantagem de estar no seu ambiente seguro.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-brand-accent fill-current" viewBox="0 0 448 512"><path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Plataformas Criptografadas</h4>
+                                <p class="text-gray-400 text-sm">Uso de ferramentas seguras (Meet/Zoom) para total sigilo.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-brand-accent fill-current" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Flexibilidade de Horários</h4>
+                                <p class="text-gray-400 text-sm">Opções de agenda estendida para quem trabalha em horário comercial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 w-full reveal-up delay-200">
+                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 text-center">
+                        <h3 class="text-2xl font-serif font-bold mb-2">Pronto para começar?</h3>
+                        <p class="text-gray-300 mb-8">Agende uma conversa inicial para nos conhecermos.</p>
+                        <a href="https://wa.me/5581997427400" target="_blank" rel="noopener noreferrer" class="block w-full py-4 bg-brand-accent text-white font-bold rounded-xl hover:bg-white hover:text-brand-dark transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-white/50">
+                            Falar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-serif font-bold text-center text-brand-dark mb-12 reveal-up">Dúvidas Frequentes</h2>
+
+            <div class="space-y-4 reveal-up">
+                <div class="faq-item border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <button class="w-full px-8 py-6 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-primary focus:z-10" aria-expanded="false">
+                        <span class="font-semibold text-brand-dark text-lg">Aceita planos de saúde?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </button>
+                    <div class="faq-content h-0 overflow-hidden transition-all duration-300 bg-brand-bg/50">
+                        <div class="px-8 py-6 text-gray-600">
+                            Os atendimentos são estritamente particulares para garantir a qualidade e a duração adequada das sessões. Porém, emito recibo fiscal para que você possa solicitar o reembolso integral ou parcial junto ao seu plano de saúde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <button class="w-full px-8 py-6 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-primary focus:z-10" aria-expanded="false">
+                        <span class="font-semibold text-brand-dark text-lg">Qual a duração e frequência?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </button>
+                    <div class="faq-content h-0 overflow-hidden transition-all duration-300 bg-brand-bg/50">
+                        <div class="px-8 py-6 text-gray-600">
+                            As sessões duram 50 minutos. A frequência inicial recomendada é semanal, pois isso estabelece o vínculo terapêutico e dá ritmo ao processo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <button class="w-full px-8 py-6 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-primary focus:z-10" aria-expanded="false">
+                        <span class="font-semibold text-brand-dark text-lg">Como agendo a primeira vez?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-primary transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </button>
+                    <div class="faq-content h-0 overflow-hidden transition-all duration-300 bg-brand-bg/50">
+                        <div class="px-8 py-6 text-gray-600">
+                            Basta clicar no botão do WhatsApp nesta página. Você falará diretamente comigo para verificarmos a disponibilidade de horários que melhor se encaixe na sua rotina.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-serif font-bold text-brand-dark flex items-center gap-2 mb-4 focus:outline-none focus:ring-2 focus:ring-brand-primary rounded w-fit">
+                        <span>Tulio Henriques</span>
+                    </a>
+                    <p class="text-gray-500 max-w-sm">
+                        Espaço terapêutico dedicado ao autoconhecimento e à saúde mental. Atendimento online para todo o Brasil e falantes de português no exterior.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-dark mb-4">Navegação</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a href="#sobre" class="hover:text-brand-primary focus:outline-none focus:underline focus:text-brand-primary">Sobre</a></li>
+                        <li><a href="#especialidades" class="hover:text-brand-primary focus:outline-none focus:underline focus:text-brand-primary">Especialidades</a></li>
+                        <li><a href="#faq" class="hover:text-brand-primary focus:outline-none focus:underline focus:text-brand-primary">Dúvidas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-dark mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-500">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> (00) 00000-0000</li>
+                        <li><a href="mailto:contato@psicologo.com" class="hover:text-brand-primary focus:outline-none focus:underline flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> contato@psicologo.com</a></li>
+                        <li class="pt-2 flex gap-4 text-xl">
+                            <a href="https://www.instagram.com/tuliohenriquespsicologo?igsh=YzZ5ODN6N2tpejNo" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-brand-primary focus:outline-none focus:text-brand-primary transition-colors"><svg class="w-6 h-6 fill-current" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-brand-primary focus:outline-none focus:text-brand-primary transition-colors"><svg class="w-6 h-6 fill-current" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Consultório de Psicologia. Todos os direitos reservados.</p>
+                <p class="mt-2 text-xs">Em caso de emergência ou risco à vida, ligue 188 (CVV) ou dirija-se ao hospital mais próximo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5581997427400" target="_blank" rel="noopener noreferrer" class="whatsapp-animate fixed bottom-8 right-8 w-14 h-14 bg-[#25d366] text-white rounded-full flex items-center justify-center text-3xl shadow-lg shadow-green-900/20 hover:scale-110 transition-transform z-50 focus:outline-none focus:ring-4 focus:ring-green-300 focus:scale-110" aria-label="Falar no WhatsApp">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- Menu Mobile Otimizado ---
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            
+            let isMenuOpen = false;
+
+            // SVG Paths
+            const iconBars = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+            const iconClose = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+
+            function toggleMenu() {
+                isMenuOpen = !isMenuOpen;
+                const svg = mobileBtn.querySelector('svg');
+                
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+                    mobileMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    svg.innerHTML = iconClose;
+                    mobileBtn.setAttribute('aria-expanded', 'true');
+                } else {
+                    mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    mobileMenu.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+                    svg.innerHTML = iconBars;
+                    mobileBtn.setAttribute('aria-expanded', 'false');
+                }
+            }
+
+            mobileBtn.addEventListener('click', toggleMenu);
+            
+            // Ajuste: Fechar o menu ao clicar em qualquer link
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (isMenuOpen) toggleMenu();
+                });
+            });
+
+            // --- Navbar Scroll Effect ---
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    navbar.classList.add('shadow-md', 'bg-white/95');
+                    navbar.classList.remove('bg-white/80');
+                } else {
+                    navbar.classList.remove('shadow-md', 'bg-white/95');
+                    navbar.classList.add('bg-white/80');
+                }
+            }, { passive: true });
+
+            // --- FAQ Accordion ---
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const button = item.querySelector('button');
+                const content = item.querySelector('.faq-content');
+                const icon = item.querySelector('.faq-icon');
+
+                button.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+
+                    // Fecha outros
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            const otherContent = otherItem.querySelector('.faq-content');
+                            const otherIcon = otherItem.querySelector('.faq-icon');
+                            const otherButton = otherItem.querySelector('button');
+
+                            otherItem.classList.remove('open');
+                            otherButton.setAttribute('aria-expanded', 'false');
+                            otherContent.style.height = '0';
+                            otherIcon.classList.remove('rotate-45', 'text-brand-accent');
+                            otherIcon.classList.add('text-brand-primary');
+                        }
+                    });
+
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        button.setAttribute('aria-expanded', 'true');
+                        content.style.height = content.scrollHeight + 'px';
+                        
+                        icon.classList.add('rotate-45', 'text-brand-accent');
+                        icon.classList.remove('text-brand-primary');
+                    } else {
+                        item.classList.remove('open');
+                        button.setAttribute('aria-expanded', 'false');
+                        content.style.height = '0';
+                        icon.classList.remove('rotate-45', 'text-brand-accent');
+                        icon.classList.add('text-brand-primary');
+                    }
+                });
+            });
+
+            // --- Intersection Observer (Animações) ---
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
