@@ -1,7 +1,16 @@
+/* Efeito de Vidro Fosco */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Animações de Scroll */
 .reveal-up {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.2, 1, 0.3, 1), transform 1s cubic-bezier(0.2, 1, 0.3, 1);
     will-change: opacity, transform;
 }
 
@@ -10,33 +19,50 @@
     transform: translateY(0);
 }
 
+/* Float Animation */
 @keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
 }
 
 .animate-float {
-    animation: float 4s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
+/* Scrollbar Personalizada e Suave */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #f1f1f1; }
-::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+::-webkit-scrollbar-track { background: #FAF9F6; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
 
-html { scroll-padding-top: 80px; }
+html { 
+    scroll-padding-top: 100px; 
+    scroll-behavior: smooth;
+}
 
+/* Animação do WhatsApp */
 @keyframes pulse-green {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
     70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-.whatsapp-animate { animation: pulse-green 2s infinite; }
-.whatsapp-animate:hover { animation: none; }
+.whatsapp-animate { 
+    animation: pulse-green 2.5s infinite; 
+}
+.whatsapp-animate:hover { 
+    animation: none; 
+    transform: scale(1.1);
+}
 
+/* Acessibilidade - Foco */
 *:focus-visible {
     outline: 2px solid #4A7C75;
-    outline-offset: 2px;
+    outline-offset: 4px;
+}
+
+/* Typography Enhancements */
+p {
+    line-height: 1.8; /* Melhor leitura */
 }
