@@ -173,19 +173,46 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 w-full reveal-up">
-                    <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden shadow-2xl group cursor-pointer border-4 border-white">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800" 
-                             alt="Capa do vídeo de apresentação" 
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0">
-                        
-                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
-                            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                                <svg class="w-6 h-6 text-brand-primary ml-1 fill-current" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-xs text-center mt-3 text-gray-400 italic">Entenda como a fenomenologia enxerga sua dor</p>
-                </div>
+    <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden shadow-2xl border-4 border-white group">
+        
+        <video 
+            id="video-apresentacao"
+            src="Video/202601191437.mp4" 
+            class="w-full h-full object-cover"
+            playsinline
+            preload="metadata">
+            Seu navegador não suporta este vídeo.
+        </video>
+        
+        <div 
+            id="video-overlay"
+            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors cursor-pointer"
+            onclick="togglePlay()">
+            
+            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6 text-brand-primary ml-1 fill-current" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/></svg>
+            </div>
+        </div>
+
+    </div>
+    <p class="text-xs text-center mt-3 text-gray-400 italic">Entenda como a fenomenologia enxerga sua dor</p>
+</div>
+
+<script>
+    function togglePlay() {
+        const video = document.getElementById('video-apresentacao');
+        const overlay = document.getElementById('video-overlay');
+        
+        // Mostra os controles nativos (barra de tempo, volume)
+        video.controls = true;
+        
+        // Toca o vídeo
+        video.play();
+        
+        // Esconde o botão de play customizado
+        overlay.style.display = 'none';
+    }
+</script>
                 
                 <div class="lg:w-1/2 space-y-6 text-lg reveal-up delay-100">
                     <span class="text-brand-primary font-bold tracking-widest uppercase text-xs">O Profissional</span>
